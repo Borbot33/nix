@@ -17,8 +17,9 @@ in
 			inputs.nixpkgs-unstable.lib.nixosSystem {
 				modules = [
 					inputs.home-manager-unstable.nixosModules.home-manager
-					../../users/${user}
+					../../modules
 					./${name}/configuration.nix
+					../../users/${user}
 					./common
 					{
 						home-manager = {
