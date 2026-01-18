@@ -37,6 +37,7 @@
 
 
 			neo-tree = {
+				enable = true;
 				settings = {
 					close_if_last_window = true;
 					enable = true;

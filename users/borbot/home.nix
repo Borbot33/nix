@@ -11,5 +11,15 @@
 		../../dotfiles/neovim
 	];
 
+	programs.git = {
+		enable = true;
+		settings = {
+			user = {
+				name = "Borbot";
+				email = "github@borbot.xyz";
+			};
+		};
+	};
+
 	programs.home-manager.enable = true;
 }
