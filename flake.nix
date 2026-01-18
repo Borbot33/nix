@@ -4,6 +4,7 @@
 		nixpkgs-unstable.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
 		flake-parts.url = "github:hercules-ci/flake-parts";
+		catppuccin.url = "github:catppuccin/nix";
 
 		nixvim = {
 			url = "github:nix-community/nixvim/nixos-25.11";

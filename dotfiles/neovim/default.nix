@@ -1,11 +1,5 @@
 { config, self, ... }:
 {
-	programs.neovim = {
-		viAlias = true;
-		vimAlias = true;
-		defaultEditor = true;
-	};
-
 	programs.nixvim = {
 		enable = true;
 
@@ -35,6 +29,13 @@
 				enable = true;
 			};
 
+			lualine = {
+				enable = true;
+			};
+
+			indent-blankline = {
+				enable = true;
+			};
 
 			neo-tree = {
 				enable = true;
@@ -44,5 +45,29 @@
 				};
 			};
 		};
+
+		globals = {
+			mapleader = " ";
+		};
+
+		opts = {
+			number = true;
+			relativenumber = true;
+
+			tabstop = 5;
+			shiftwidth = 5;
+			expandtab = false;
+		};
+
+		keymaps = [ 
+			{
+				mode = "n";
+				key = "<C-n>";
+				action = "<cmd>Neotree toggle<CR>";
+				options = {
+					silent = true;
+				};
+			}
+		];
 	};
 }

@@ -62,6 +62,11 @@
 	environment.systemPackages = with pkgs; [
 		spotify
 		discord
+		kitty
+	];
+
+	fonts.packages = with pkgs; [
+		nerd-fonts._0xproto
 	];
 
 	programs.firefox.enable = true;
