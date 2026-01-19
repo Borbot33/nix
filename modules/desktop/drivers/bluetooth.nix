@@ -12,6 +12,10 @@ in
 			bluetooth = {
 				enable = true;
 			};
+
+			xpadneo = {
+				enable = true;
+			};
 		};
 
 		hardware.enableAllFirmware = true;
