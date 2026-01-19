@@ -12,7 +12,7 @@
 
 		zsh = {
 			enable = true;
-			enableCompletion = false;
+			enableCompletion = true;
 			zplug = {
 				enable = true;
 				plugins = [

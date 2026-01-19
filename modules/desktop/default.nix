@@ -31,8 +31,9 @@ in
 
 		environment.systemPackages = with pkgs; [
 			spotify
-				discord
-				kitty
+			discord
+			kitty
+			signal-desktop
 		];
 
 		fonts.packages = with pkgs; [
@@ -44,6 +45,7 @@ in
 
 	imports = [
 		./desktop-env
-			./drivers
+		./drivers
+		./gaming
 	];
 }

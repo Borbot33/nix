@@ -30,7 +30,7 @@
 				"aarch64-linux" 
 			];
 			imports = [
-				./machines/nixos
+				./hosts/nixos
 			];
 		};
 }
