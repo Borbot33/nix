@@ -1,7 +1,8 @@
-{ config, pkgs, ... }:
+{ config, inputs, pkgs, ... }:
 {
 	imports = [ 	
 		./hardware-configuration.nix
+		inputs.jovian.nixosModules.default
 	];
 
 	boot.loader.systemd-boot.enable = true;
@@ -28,16 +29,15 @@
 				enable = true;
 				open = true;
 			};
-
 			bluetooth.enable = true;
 		};
-
-		gaming = {
-			steam = {
-				enable = true;
-			};
-		};
 	};
+
+	programs.steam = {
+		enable = true;
+	};
+
+	jovian.steam.enable = true;
 
 	fileSystems."/mnt/enderchest" = { 
 		device = "/dev/disk/by-uuid/693d6b24-7d4a-40a0-8d99-2794aae8ddc9";

@@ -46,6 +46,5 @@ in
 	imports = [
 		./desktop-env
 		./drivers
-		./gaming
 	];
 }

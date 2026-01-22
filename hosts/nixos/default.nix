@@ -33,6 +33,7 @@ in
 						};
 					}
 				];
+				specialArgs = { inherit inputs; };
 			}
 	) configurations;
 }
